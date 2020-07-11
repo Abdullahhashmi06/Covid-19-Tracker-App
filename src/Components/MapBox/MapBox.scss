@@ -1,0 +1,48 @@
+/* This usually goes in the global but let's keep it here
+   for the sake of this tutorial */
+
+
+/*  Make our map take the full viewport - 100% */
+#root,
+.MapBoxApp,
+.mapContainer,
+.mapBox {
+  margin-left: 2% !important;
+  width: 100%  !important;
+  height: 100%  !important;
+  // margin-top: 2% ! 
+}
+
+/* Tooltip code */
+.mapboxgl-popup {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  color: #444444;
+}
+
+.mapboxgl-popup-content {
+  padding: 1rem;
+  margin: 0;
+
+  > * {
+    margin: 0 0 0.5rem;
+    padding: 0;
+  }
+
+  p {
+    border-bottom: 1px solid rgba(black, 0.2);
+
+    b {
+      font-size: 1rem;
+      color: #212121;
+      padding: 0 5px;
+    }
+  }
+
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+}

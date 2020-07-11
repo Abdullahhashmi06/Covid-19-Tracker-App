@@ -1,0 +1,44 @@
+.container {
+    margin-left: 20px;
+    /* margin-top: 70px !important; */
+}
+
+.div{
+    margin: 0 10px !important;
+    border-radius: 5px !important;
+    width: 80% !important;
+    padding: 10px !important;
+    display: block !important;
+    text-align: left;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75); 
+}
+
+.card {
+    margin: 0 10px !important;
+    width: 100% !important;
+    display: inline-block !important;
+}
+
+#infected {
+    background-color:  #0457be;
+    color:white;
+    /* box-shadow: 5px 5px 5px 5px #dadada !important; */
+}
+
+#recovered {
+    background-color: #03ac13;
+    /* box-shadow: 5px 5px 5px 5px #dadada !important; */
+}
+
+#deaths {
+    border-bottom: 10px solid #f72500;
+    /* box-shadow: 5px 5px 5px 5px #dadada !important; */
+}
+
+@media (max-width: 770px) {
+    .card {
+        margin: 2% 0 !important;
+    }
+}

@@ -1,0 +1,35 @@
+body{
+  font-family: 'Roboto', sans-serif !important;
+  background-color: rgb(250, 250,250) !important;
+  width:97vw;
+}
+
+.divCount {
+  text-align: center !important;
+  margin-bottom: 2% !important;
+}
+
+.countryGrid {
+  margin-top: 50px !important;
+}
+
+
+.mt80 {
+  margin-top:100px !important;
+}
+
+@media (max-width: 770px) {
+	.container {
+		margin: 0 10% !important;
+  }
+  
+
+  .divCount {
+    margin-left: -10px !important;
+  }
+
+
+  .globe{
+    margin-top: -40px !important;
+  }
+}

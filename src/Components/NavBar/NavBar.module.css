@@ -1,0 +1,26 @@
+.root{
+    flex-grow: 1;
+  }
+  
+.nav{
+  margin-left: auto !important;
+}
+
+.navBar{
+    background-color: darkslategrey !important;
+  }
+
+  .covidHead{
+    color: white !important;
+  }
+
+  .navLinks{
+    color: white !important;
+    display: inline-block;
+    margin-left: 15px !important;
+    /* float:right; */
+  }
+  
+  .covidHead:hover {
+    text-decoration: none !important;
+  }

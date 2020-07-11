@@ -1,0 +1,71 @@
+// import React, { useState, useEffect  } from 'react';
+// import { fetchDailyData } from '../../api';
+// import  { Line } from 'react-chartjs-2';
+
+// import styles from './Chart.module.css';
+// // import BarChart from '../BarChart';
+
+// const Chart = ({ data: { confirmed, deaths, recovered } }) => {
+//     const [dailyData, setDailyData] = useState();
+//     useEffect(() => {
+//         const fetchAPI = async () => {
+//           setDailyData(await fetchDailyData());
+//         }
+//     fetchAPI();
+// }, []);
+
+// const lineChart = (
+//   dailyData) ? (
+//     <Line
+//       data={{
+//         labels: dailyData.map(({ date }) => date),
+//         datasets: [{
+//           data: dailyData.map((data) => data.confirmed),
+//           label: 'Infected',
+//           borderColor: '#3333ff',
+//           fill: true,
+//         }, {
+//           data: dailyData.map((data) => data.deaths),
+//           label: 'Deaths',
+//           borderColor: 'red',
+//           backgroundColor: 'rgba(255, 0, 0, 0.5)',
+//           fill: true,
+//         },
+//         ],
+//       }}
+//     />
+//   ) : null
+
+//         // const barChart = (
+//         //   confirmed 
+//         //   ? (
+//         //     <Bar 
+//         //       data={{
+//         //         labels: ['Infected', 'Recovered', 'Deaths'],
+//         //         datasets: [{
+//         //           label: 'People',
+//         //           backgroundColor: [
+//         //             '#0457be',
+//         //             '#03ac13',
+//         //             '#f72500',
+//         //         ],
+//         //         data: [confirmed.value, recovered.value, deaths.value ]
+//         //         }]
+//         //       }}
+//         //       options={{
+//         //         legend: { display: false },
+//         //         title: { display: true, text:`Current state in ${country}` }
+//         //       }}
+//         //     />
+//         //   ) : null
+//         // )
+
+//     return (
+//         <div className={styles.container}>
+//           {country ? lineChart : lineChart}
+//         </div>
+//     )
+// }
+
+// export default Chart;
+
