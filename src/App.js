@@ -33,20 +33,21 @@ class App extends React.Component {
     const { data } = this.state;
 
     return (
-      
+      <BrowserRouter>
       <div className={styles.container}>
         <Grid container spacing={3}>
           <Grid container item xs={12} md={12} className={styles.navGrid}>
             <NavBar />
           </Grid>
-          <BrowserRouter>
+          
             <Routes>
               <Route path="/" element={<Home fd={data} country={country} hcc={this.handleCountryChange} />} />
               <Route exact path="/countrycards" element={<AllCountries />} />
             </Routes>          
-          </BrowserRouter>
+          
         </Grid>
-      </div>  
+      </div> 
+      </BrowserRouter> 
     )
   }
 }
